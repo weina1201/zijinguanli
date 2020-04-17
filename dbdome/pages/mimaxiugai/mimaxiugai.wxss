@@ -1,0 +1,60 @@
+.container{
+  position: absolute;
+  left: 10%;
+  top: 2%;
+  height: 90vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.biaoti{
+  font-size: 40rpx;
+  color: blue;
+  line-height: 2%;
+  font-weight: bold;
+  height: 0.8%;
+  padding: 30rpx;
+  border-left: blue solid 10rpx;
+}
+
+.touxiang{
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+  left: 35%;
+  top: 1%;
+}
+
+form{
+  position: relative;
+  top:8%;
+  height: 90%;
+}
+
+.bar{
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  border-top:white solid 60rpx;
+}
+
+.shuru{
+  width: 300rpx;
+  border: black solid 1px;
+}
+
+.zhu{
+  font-size: 30rpx;
+  color: #006699;
+}
+
+button{
+  position: absolute;
+  left: 8%;
+  top: 70%;
+  width: 80%;
+  background-color: #006699;
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jiangxuejin/jiangxuejin",
+    "pages/jiaofeijilu/jiaofeijilu",
+    "pages/bijiaodingdan/bijiaodingdan",
+    "pages/xuanjiaodingdan/xuanjiaodingdan",
+    "pages/gouwuche/gouwuche",
+    "pages/jiaofeidingdan/jiaofeidingdan",
+    "pages/shouye/shouye",
+    "pages/dingdanqueren/dingdanqueren",
+    "pages/zhifushibai/zhifushibai",
+    "pages/zhifuchenggong/zhifuchenggong",
+    "pages/mimaxiugai/mimaxiugai"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "大学生资金管理平台",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#328EEB",
+    "list": [
+      {
+        "pagePath": "pages/shouye/shouye",
+        "text": "首页",
+        "iconPath": "pages/image/shouye1.png",
+        "selectedIconPath": "pages/image/shouye2.png"
+      },
+      {
+        "pagePath": "pages/jiaofeidingdan/jiaofeidingdan",
+        "text": "缴费订单",
+        "iconPath": "pages/image/jiaofeidingdan1.png",
+        "selectedIconPath": "pages/image/jiaofeidingdan2.png"
+      },
+      {
+        "pagePath": "pages/jiaofeijilu/jiaofeijilu",
+        "text": "缴费记录",
+        "iconPath": "pages/image/jiaofeijilu1.png",
+        "selectedIconPath": "pages/image/jiaofeijilu2.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

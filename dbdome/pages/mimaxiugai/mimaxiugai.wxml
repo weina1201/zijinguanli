@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="biaoti">
+    <text>密码修改</text>
+  </view>
+  <image class="touxiang" src="/pages/image/mimaxiugai-1.png"></image>
+  <form bindsubmit="xg">
+    <view class="bar">
+      <text>请输入原密码：</text>
+      <input password class="shuru" name="yuanmm">
+      </input>
+    </view>
+    <view class="bar">
+      <text>请输入新密码：</text>
+      <input password class="shuru" name="xinmm">
+      </input>
+    </view>
+    <view class="bar">
+      <text>请确认新密码：</text>
+      <input password class="shuru" name="zaimm">
+      </input>
+    </view>
+    <view>
+      <text class="zhu">注：初始密码为学号后6位。</text>
+    </view>
+    <view>
+      <button form-type="submit">提交修改</button>
+    </view>
+  </form>
+  
+</view>

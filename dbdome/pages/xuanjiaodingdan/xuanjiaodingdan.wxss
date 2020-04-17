@@ -1,0 +1,144 @@
+
+.biaoti{
+  position: absolute;
+  left: 10%;
+  top: 2%;
+  font-size: 50rpx;
+  color: blue;
+  line-height: 2%;
+  font-weight: bold;
+  height: 0.8%;
+  width: 80%;
+  padding: 30rpx;
+  border-left: blue solid 10rpx;
+}
+
+
+.bbox{
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #666666 solid;
+}
+
+
+.xmlist{
+  position: relative;
+  top: 5%;
+  width: 100%;
+  border-bottom: 1px #666666 solid;
+  display: flex;
+}
+
+
+
+.sx{
+  color: #0066FF;
+  font-size: 25rpx;
+}
+
+.jq{
+  color: #FF6600;
+  font-size: 30rpx;
+}
+
+
+.fxk{
+  flex: 1;
+  transform: scale(0.9, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hanzi{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.xmmc{
+  position: relative;
+  font-size: 30rpx;
+}
+
+.tool{
+  flex: 2;
+}
+
+.space{
+  width: 100%;
+  height: 90rpx;
+}
+
+.num_tool{
+  position: absolute;
+  width: 90%;
+  bottom: 5%;
+  left: 75%;
+  display: flex;
+}
+
+.num_edit{
+  width: 30rpx;
+  height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+
+
+.num{
+  width: 90rpx;
+  height: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button2{
+  width: 90%;
+  background-color: #169BD5;
+  color: white;
+}
+
+.footer_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+}
+
+.car{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.add{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  background-color: #169BD5;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space2{
+  width: 100%;
+  height: 90rpx;
+}

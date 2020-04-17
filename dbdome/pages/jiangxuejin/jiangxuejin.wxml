@@ -1,0 +1,19 @@
+<view class="biaoti">
+      <text>奖学金</text>
+    </view>
+    <view>
+      <button bindtap="goBj">返回</button>
+    </view>
+    <view class="bbox">
+        <view class="box" wx:for='{{list}}' wx:key = 'id'>
+        <view class="space"></view>
+          <view class="xmlist" >
+            <view class="hanzi">
+              <text class="xmmc">{{item.title}}</text>
+              <text class="bz">{{item.beizhu}}</text>
+            </view>
+            <view class="jq">￥{{item.prize}}</view>
+          </view>
+          <view class="space"></view>
+       </view>
+    </view>

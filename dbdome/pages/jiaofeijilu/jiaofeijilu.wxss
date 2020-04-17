@@ -1,0 +1,438 @@
+.biaoti{
+  position: absolute;
+  left: 10%;
+  top: 5%;
+  font-size: 40rpx;
+  color: blue;
+  line-height: 2%;
+  font-weight: bold;
+  height: 0.8%;
+  padding: 30rpx;
+  border-left: blue solid 10rpx;
+}
+
+.jilu{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bjbox{
+  position: relative;
+  width: 100%;
+  border: 1px black solid;
+  border-radius: 10%;
+}
+
+.box1{
+  position: relative;
+  left: 3%;
+  width: 94%;
+  border-bottom: 1px black solid;
+}
+
+button{
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  color: #00CCFF;
+  font-size: 15px;
+  width: 75px;
+  height: 30px;
+  background-color: white;
+  line-height: 30px;
+}
+
+.bar1{
+  position: relative;
+  left: 4%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: row;
+  margin:20rpx 0;
+}
+
+.bar2{
+  width: 33.3%;
+  text-align: left;
+}
+
+.bar3{
+  position: absolute;
+  font-size: 30rpx;
+  left: 75%;
+  top: 10%;
+  color: red;
+}
+
+.bar4{
+  position: absolute;
+  font-size: 30rpx;
+  left: 75%;
+  top: 10%;
+  color: #00CCFF
+}
+
+.bar7{
+  position: relative;
+  left: 6%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  margin:20rpx 0;
+}
+
+.space1{
+  position: relative;
+  width: 100%;
+  height: 20rpx;
+}
+
+.bar5{
+  width: 33%;
+  text-align: left;
+}
+
+.bar6{
+  width: 66%;
+  text-align: left;
+}
+
+/*模态框*/
+.modals {  
+  position: fixed;  
+  z-index: 999;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;
+
+}
+.modals-cancel {  
+  position: absolute;  
+  z-index: 1000;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0; 
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+.bottom-dialog-body {  
+  position: absolute;  
+  z-index: 10001;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  padding: 30rpx;  
+  height: 30rpx;  
+  background-color: rgb(183, 240, 202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*动画前初始位置*/
+.bottom-pos {  
+  -webkit-transform: translateY(100%);  
+  transform: translateY(100%);
+}
+
+.radio-group{
+  position: relative;
+  top: 5%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+image{
+  position: relative;
+  width: 35px;
+  height: 25px;
+}
+
+.space{
+  height: 20px;
+}
+
+.qd{
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  background-color: rgb(183, 240, 202);
+  color: white;
+}
+
+.b1{
+  position: relative;
+  top: 10px;
+  left: 40%;
+}
+
+.n1{
+  position: absolute;
+  top: 50px;
+  left: 25px;
+}
+
+.n2{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+.n3{
+  position: absolute;
+  top: 85px;
+  left: 25px;
+}
+
+.n4{
+  position: absolute;
+  top: 85px;
+  left: 150px;
+}
+
+.n5{
+  position: absolute;
+  top: 120px;
+  left: 25px;
+}
+
+.n6{
+  position: absolute;
+  top: 120px;
+  left: 150px;
+}
+
+.n7{
+  position: absolute;
+  top: 155px;
+  left: 25px;
+}
+
+.n8{
+  position: absolute;
+  top: 155px;
+  left: 150px;
+}
+
+  
+ 
+
+ 
+ 
+ page .wallets-password {
+ 
+  position: fixed;
+ 
+  left: 0;
+ 
+  top: 0;
+ 
+  width: 100%;
+ 
+  height: 100%;
+ 
+  background: rgba(0, 0, 0, 0.6);
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap {
+ 
+  position: absolute;
+ 
+  top: 200rpx;
+ 
+  left: 50%;
+ 
+  display: flex;
+ 
+  flex-direction: column;
+ 
+  width: 600rpx;
+ 
+  margin-left: -300rpx;
+ 
+  background: #fff;
+ 
+  border-radius: 20rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .top {
+ 
+  display: flex;
+ 
+  align-items: center;
+ 
+  height: 90rpx;
+ 
+  border-bottom: 2rpx solid #33FF00;
+ 
+  justify-content: space-around;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .top .close {
+ 
+  font-size: 44rpx;
+ 
+  color: #999;
+ 
+  font-weight: 100;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .top .forget {
+ 
+  color: #00a2ff;
+ 
+  font-size: 22rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .actual_fee {
+ 
+  display: flex;
+ 
+  align-items: center;
+ 
+  justify-content: center;
+ 
+  color: #000;
+ 
+  height: 100rpx;
+ 
+  margin: 0 23rpx;
+ 
+  border-bottom: 2rpx solid #ddd;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .actual_fee span {
+ 
+  font-size: 24rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .actual_fee text {
+ 
+  font-size: 36rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .input-password-wrap {
+ 
+  display: flex;
+ 
+  align-items: center;
+ 
+  justify-content: center;
+ 
+  height: 150rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .input-password-wrap .password_dot {
+ 
+  display: flex;
+ 
+  align-items: center;
+ 
+  justify-content: center;
+ 
+  text-align: center;
+ 
+  color: #000;
+ 
+  box-sizing: border-box;
+ 
+  width: 90rpx;
+ 
+  height: 90rpx;
+ 
+  border: 2rpx solid #ddd;
+ 
+  border-left: none 0;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .input-password-wrap .password_dot:nth-child(1) {
+ 
+  border-left: 2rpx solid #ddd;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content-wrap .input-password-wrap .password_dot i {
+ 
+  background: #000;
+ 
+  border-radius: 50%;
+ 
+  width: 20rpx;
+ 
+  height: 20rpx;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content {
+ 
+  position: absolute;
+ 
+  opacity: 0;
+ 
+  left: -100%;
+ 
+  top: 600rpx;
+ 
+  background: #f56;
+ 
+  z-index: -999;
+ 
+ }
+ 
+  
+ 
+ page .wallets-password .input-content.active {
+ 
+  z-index: -99;
+ 
+ }
+
+page .wallets-password .input-content-wrap .chose{
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  border-bottom: 2rpx solid #ddd;
+  justify-content: space-around;
+  margin: 0 23rpx;
+}

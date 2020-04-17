@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="Bbar" bindtap="goToBj">
+    <text class="bartext1">必缴订单</text>
+    <image class="barimage" src="/pages/image/dd2.png"></image>
+  </view>
+  <view class="Xbar" bindtap="goToXj">
+    <text class="bartext2">选缴订单</text>
+    <image class="barimage" src="/pages/image/dd4.png"></image>
+  </view>
+  <view class="Jbar" bindtap="goToJxj">
+    <text class="bartext3">奖学金</text>
+    <image class="barimage1" src="/pages/image/dd5.png"></image>
+  </view>
+</view>

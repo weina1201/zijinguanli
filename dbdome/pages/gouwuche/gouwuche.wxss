@@ -1,0 +1,120 @@
+.biaoti{
+  position: absolute;
+  left: 10%;
+  top: 2%;
+  font-size: 50rpx;
+  color: blue;
+  line-height: 2%;
+  font-weight: bold;
+  height: 0.8%;
+  padding: 30rpx;
+  border-left: blue solid 10rpx;
+}
+
+.bz{
+  position: absolute;
+  top: 9%;
+  left: 10%;
+  color: #FF6600;
+  font-size: 30rpx;
+}
+
+.bbox{
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px #666666 solid;
+}
+
+
+.xmlist{
+  position: relative;
+  top: 5%;
+  width: 100%;
+  border-bottom: 1px #666666 solid;
+  display: flex;
+}
+
+
+
+.sx{
+  color: #0066FF;
+  font-size: 25rpx;
+}
+
+.jq{
+  color: #FF6600;
+  font-size: 30rpx;
+}
+
+
+.hanzi{
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.xmmc{
+  position: relative;
+  font-size: 30rpx;
+}
+
+.shuzi{
+  display: flex;
+  justify-content: space-between;
+}
+
+.number{
+  color: #808080;
+  font-size: 30rpx;
+}
+
+.delete{
+  flex: 2;
+  font-size: 30rpx;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space{
+  width: 100%;
+  height: 90rpx;
+}
+
+
+.footer_tool{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  border-top: 1rpx solid #ccc;
+}
+
+.car{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.add{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 50%;
+  background-color: #169BD5;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

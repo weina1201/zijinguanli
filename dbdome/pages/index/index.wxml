@@ -1,0 +1,25 @@
+<view class="container">
+  <image src="/pages/image/index-1.jpg"></image>
+  <form bindsubmit="load" >
+    <view class="bar">
+      <text >学校</text>
+      <Select options='{{optionArry}}' bind:mySelectItem='onSelectItem' name='formkey' showkey='name' class="select" />
+    </view>
+    <view class="bar">
+      <text>学号</text> <input placeholder="请输入学号" name='ID' type="number"></input>
+    </view>
+    <view class="bar">
+      <text>密码</text>
+      <input password="true" placeholder="请输入密码" name='password'></input>
+    </view>
+    <view><text class="zhu">注：初始登录密码为111111。忘记密码请联系学校相关老师！</text></view>
+    <view class="shuru">
+      <input class="writeyzm" bindinput="yanzheng" name = 'yz' value="{{sr}}"></input>
+      <text class="shengchengyzm">{{yzm}}</text>
+      <button class="huanyizhang" bindtap="createCode">换一张</button>
+    </view>
+    <view>
+    <button form-type="submit">登录</button>
+    </view>
+  </form>
+</view>

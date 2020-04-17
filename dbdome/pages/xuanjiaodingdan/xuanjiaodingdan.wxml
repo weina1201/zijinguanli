@@ -1,0 +1,39 @@
+<view class="biaoti">
+    <text>选缴订单</text>
+  </view>
+  <view class="bbox">
+    <view class="box" wx:for='{{list}}' wx:key='id'>
+      <view class="xmlist">
+        <view class="fxk">
+          <checkbox-group data-id="{{item.goods_id}}"  bindtap="handChange">
+            <checkbox checked="{{item.Ischoice}}"></checkbox>
+          </checkbox-group>
+        </view>
+        <view class="hanzi">
+          <text class="xmmc">{{item.title}}</text>
+          <text class="sx">{{item.beizhu}}</text>
+          <text class="jq">￥{{item.prize}}</text>
+        </view>
+        <view class="tool">
+          <view class="num_tool">
+            <view class="num_edit" bindtap="handNum" data-id="{{item.goods_id}}" data-operation="-1">-</view>
+            <view class="num">{{item.num}}</view>
+            <view class="num_edit" bindtap="handNum" data-id="{{item.goods_id}}" data-operation="+1">+</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="space"></view>
+  </view>
+<!--底部工具栏-->
+<view class="footer_tool">
+<!--确认添加-->
+  <navigator url="/pages/gouwuche/gouwuche" class="car">
+    购物车
+  </navigator> 
+  <!--购物车-->
+  <view class="add" bindtap="handInCar">
+    确认添加
+  </view>
+</view>
+

@@ -1,0 +1,104 @@
+  <view class="biaoti">
+    <text>订单缴费记录</text>
+  </view>
+  <view class="jilu">
+    <view wx:for='{{list}}' wx:key= 'id'>
+    <view class="bjbox" >
+      <view class="box1">
+        <view class="bar1">
+          <text class="bar2">订单编号</text>
+          <text class="bar2">{{item.productid}}</text>
+        </view>
+        <view class="bar1">
+        <text class="bar2">订单创建时间</text>
+        <text class="bar2">{{item.creacttime}}</text>
+        </view>
+        <view class="bar1">
+        <text class="bar2">支付金额</text>
+        <text class="bar2">￥{{item.prize}}</text>
+        </view>
+        <view wx:if="{{item.Ispay == false}}">
+          <text class="bar3">{{item.payment_state}}</text>
+          <button bindtap="showModal1" data-id="{{item.id}}">支付</button>
+        </view>
+        <view wx:if="{{item.Ispay == true}}">
+          <text class="bar4">{{item.payment_state}}</text>
+        </view>
+      </view>
+      <view class="box2" wx:for='{{item.chilelist}}' wx:key= 'goods_id'>
+        <view class="bar1">
+        <text class="bar2">{{item.name}}</text>
+        <text class="bar2">{{item.sx}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="space1"></view>
+  </view>
+  </view>
+
+<view class="modals modals-bottom-dialog" hidden="{{hideModal1}}">   
+    <view class="modals-cancel" bindtap="hideModal1"></view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}" bindtap="goModel">
+      微信支付
+    </view>
+  </view>
+
+  <modal show="{{showModal}}" height='40%' data-id="{{which}}" bindcancel="modalCancel" bindconfirm='modalConfirm'>
+   <view class='modal-content'>
+    <text class="b1">准备支付</text>
+    <view class="bar7">
+    <text class= "bar5">订单编号</text>
+    <text class="bar6">{{list[which].productid}}</text>
+    </view>
+    <view class="bar7">
+    <text class="bar5">创建时间</text>
+    <text class="bar6">{{list[which].creacttime}}</text>
+    </view>
+    <view class="bar7">
+    <text class="bar5">支付方式</text>
+    <text class="bar6">{{mother}}</text>
+    </view>
+    <view class="bar7">
+    <text class="bar5">提交金额</text>
+    <text class="bar6">{{list[which].prize}}元</text>
+    </view>
+   </view>
+</modal>
+
+
+<!--输入钱包密码-->
+
+<view wx:if="{{wallets_password_flag}}" class="wallets-password">
+  <view class="input-content-wrap">
+    <view class="top">
+      <view catchtap="close_wallets_password" class="close">×</view>
+      <view class="txt">请输入支付密码</view>
+    </view>
+    <view class="actual_fee">
+      <span>￥</span>
+      <text>{{list[which].prize}}</text>
+    </view>
+    <view class="chose">零钱</view>
+    <view catchtap="set_Focus" class="input-password-wrap">
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=1}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=2}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=3}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=4}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=5}}"></i>
+      </view>
+      <view class="password_dot">
+        <i wx:if="{{wallets_password.length>=6}}"></i>
+      </view>
+    </view>
+  </view>
+  <input bindinput="set_wallets_password" class="input-content" password type="number" focus="{{isFocus}}" maxlength="6" />
+</view>

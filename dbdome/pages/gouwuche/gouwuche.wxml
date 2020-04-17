@@ -1,0 +1,31 @@
+<view class="biaoti">
+    <text>购物车</text>
+  </view>
+  <view class="bz">生成订单后在缴费记录内进行缴费!!</view>
+  <view class="bbox">
+    <view class="box" wx:for='{{list}}' wx:key='id'>
+      <view class="xmlist">
+        <view class="hanzi">
+          <text class="xmmc">{{item.title}}</text>
+          <text class="sx">{{item.beizhu}}</text>
+          <view class="shuzi">
+            <text class="jq">￥{{item.prize}}</text>
+            <view class="number">x{{item.num}}</view>
+          </view>
+        </view>
+        <view class="delete" bindtap="deleteDd" data-id="{{item.id}}">删除</view>
+      </view>
+    </view>
+    <view class="space"></view>
+  </view>
+<!--底部工具栏-->
+<view class="footer_tool">
+<!--确认添加-->
+  <view class="car">
+    合计：￥{{sum}}
+  </view> 
+  <!--购物车-->
+  <view class="add" bindtap="handInDd">
+  去支付
+  </view>
+</view>

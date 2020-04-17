@@ -1,0 +1,5 @@
+<view class="container">
+ <image src="/pages/image/zfcg.png"></image>
+ <text>支付成功</text>
+ <button bindtap="goJfjl">查看订单</button>
+</view>

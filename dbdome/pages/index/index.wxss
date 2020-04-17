@@ -1,0 +1,99 @@
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafcff;
+}
+image{
+  width: 100%;
+  height: 40vh;
+  margin-top:5px;
+}
+text{
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.select{
+  position: absolute;
+  left: 23%;
+}
+
+
+form{
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  color: black;
+}
+
+.bar{
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-width: 10%;
+  border-bottom-color: black;
+}
+
+.zhu{
+  font-size: 10px;
+  color: #006699;
+}
+.yanzhengma{
+  width: 20%;
+  height: 60%;
+  border: 1px solid black;
+}
+
+.shuru{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+}
+
+.writeyzm{
+  position: absolute;
+  left: 10%;
+  width: 150rpx;
+  height: 60rpx;
+  border: 1px solid black;
+}
+
+.shengchengyzm{
+  position: absolute;
+  font-size: 25px;
+  left: 45%;
+  width: 150rpx;
+  height: 60rpx;
+  border: 1px solid black;
+}
+
+.huanyizhang{
+  position: relative;
+  left: 70%;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #006699;
+}
+
+button{
+  position: relative;
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #006699;
+}

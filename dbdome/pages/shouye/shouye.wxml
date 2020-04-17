@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="biaoti">
+    <text>用户信息</text>
+  </view>
+  <image class="touxiang" src="/pages/image/mimaxiugai-1.png"></image>
+  <view class="mima" bindtap="goToMm">
+    <image class="mimaimage" src="{{image}}"></image> 
+    <text class="mimatext">修改密码</text>
+  </view>
+  <view class="box">
+    <view class="bar" wx:for='{{list}}' wx:key='id'>
+      <image class="barimage" src="{{item.src}}"></image>
+      <text class="shuxing">  {{item.title}}</text>
+      <text class="neirong">  {{item.data}}</text>
+    </view>
+  </view>
+  <view>
+    <button bindtap="goIndex">退出登录</button>
+  </view>
+</view>
+
