@@ -278,22 +278,30 @@ image{
  
   border-bottom: 2rpx solid #33FF00;
  
-  justify-content: space-around;
- 
  }
  
   
  
  page .wallets-password .input-content-wrap .top .close {
+   flex: 1;
  
   font-size: 44rpx;
  
   color: #999;
  
   font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  
  }
  
+ page .wallets-password .input-content-wrap .top .txt {
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
   
  
  page .wallets-password .input-content-wrap .top .forget {

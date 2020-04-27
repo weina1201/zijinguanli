@@ -236,7 +236,7 @@ wx_pay() {//转换为微信支付
     },
     data_json = JSON.stringify(data_string)
     wx.request({
-      url: 'http://114.115.222.89:8080/pay',
+      url: 'http://114.115.222.89:20113/pay',
       method: 'POST',
       data: data_json,
       header: {
@@ -273,7 +273,7 @@ wx_pay() {//转换为微信支付
     },
     data_json = JSON.stringify(data_string)
     wx.request({
-      url: 'http://114.115.222.89:8080/queryPaymentRecord',
+      url: 'http://114.115.222.89:20113/queryPaymentRecord',
       method: 'POST',
       data: data_json,
       header: {
@@ -450,7 +450,7 @@ wx_pay() {//转换为微信支付
         console.log(data1_string)
         var data1_json = JSON.stringify(data1_string)
         wx.request({
-          url: 'http://114.115.222.89:8080/checkpay',
+          url: 'http://114.115.222.89:20113/checkpay',
           method: 'POST',
           data: data1_json,
           header: {

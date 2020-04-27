@@ -88,6 +88,7 @@ load:function(e){
     this.createCode();
   }
   else{
+    var _this = this
     var app = getApp()
     var data_string = {
       title: 1,
@@ -97,13 +98,14 @@ load:function(e){
     },
     data_json = JSON.stringify(data_string)
     wx.request({
-      url: 'http://114.115.222.89:8080/logging',
+      url: 'http://114.115.222.89:20113/logging',
       method: "POST",
       data: data_json,
       header: {
         "Content-Type": "application/x-www-form-urlencoded;charset=utf-8"
       },
       success:function(res){
+        console.log(res)
         if(res.data[0] == 1){
           app.data.credential = res.data.substring(2,res.data.length)
           app.data.ID = ID
@@ -113,13 +115,15 @@ load:function(e){
         }
         else {
           wx.showToast({
-            title: '用户名或密码错误'
+            title: '用户名或密码错误!',
+            icon: "none"
           })
+          _this.createCode();
         }
       },
       fail:function(){
         wx.showToast({
-          title: '无法连接网络',
+          title: '无法连接网络!',
           icon: 'none'
         });
       }

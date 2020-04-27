@@ -101,7 +101,7 @@ handInCar(){
       title: '加载中',
     })
     wx.request({
-      url: 'http://114.115.222.89:8080/queryProduct',
+      url: 'http://114.115.222.89:20113/queryProduct',
       method: 'POST',
       data: data_json,
       header: {

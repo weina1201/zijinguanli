@@ -80,7 +80,7 @@ Page({
     },
     data_json = JSON.stringify(data_string)
     wx.request({
-      url: 'http://114.115.222.89:8080/enquiry',
+      url: 'http://114.115.222.89:20113/enquiry',
       method: 'POST',
       data: data_json,
       header: {

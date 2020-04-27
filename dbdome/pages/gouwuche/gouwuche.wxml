@@ -9,7 +9,7 @@
           <text class="xmmc">{{item.title}}</text>
           <text class="sx">{{item.beizhu}}</text>
           <view class="shuzi">
-            <text class="jq">￥{{item.prize}}</text>
+            <text class="jq">单价￥{{item.prize}}</text>
             <view class="number">x{{item.num}}</view>
           </view>
         </view>

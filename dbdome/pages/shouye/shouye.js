@@ -78,7 +78,7 @@ Page({
     data_json = JSON.stringify(data_string)
     console.log(data_json)
     wx.request({
-      url: 'http://114.115.222.89:8080/index',
+      url: 'http://114.115.222.89:20113/index',
       method: 'POST',
       data: data_json,
       header: {
