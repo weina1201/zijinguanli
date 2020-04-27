@@ -6,60 +6,7 @@ Page({
    */
   data: {
     Blist:[
-      {
-        ID: 1,
-        list:[
-          {
-            id: 1,
-            title: "商品名商品名商品名商品名商品名商品名商品名商品名商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          },
-          {
-            id: 2,
-            title: "商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          },
-          {
-            id: 3,
-            title: "商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          }
-        ],
-      },
-      {
-        ID: 2,
-        list:[
-          {
-            id: 1,
-            title: "商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          },
-          {
-            id: 2,
-            title: "商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          },
-          {
-            id: 3,
-            title: "商品名",
-            beizhu: "无",
-            prize: 200,
-            goods_id: 10
-          }
-        ],
-      }
     ],
-    
   },
 
   goBj:function(){
@@ -162,14 +109,14 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-    console.log("yemianchudi")
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-    console.log("yemianchudi")
+
   },
 
   /**

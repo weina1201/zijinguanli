@@ -176,7 +176,7 @@ wx_pay() {//转换为微信支付
 
   if (this.data.wallets_password.length == 6) {//密码长度6位时，自动验证钱包支付结果
 
-    wallet_pay(this.data.wallets_password, this.data.list[this.data.which].productid, this.data.lsid)
+    wallet_pay(this, this.data.wallets_password, this.data.list[this.data.which].productid, this.data.lsid)
     
     this.setData({
       isFocus: false
@@ -422,12 +422,12 @@ wx_pay() {//转换为微信支付
  
  // 钱包支付
  
- function wallet_pay(_this, tradeID, lsid) {
+ function wallet_pay(that,_this, tradeID, lsid) {
   var app = getApp()
   var data_string = {
     method: "支付交易",
     tradeID: tradeID,      // 由后端生成的订单号
-    username: "测试账户1",            // 付款账户的用户名
+    username: "账户1",            // 付款账户的用户名
     password: "123456",               // 付款账户的密码
   }
   var data_json = JSON.stringify(data_string)
@@ -460,11 +460,15 @@ wx_pay() {//转换为微信支付
             console.log(res)
           }
         })
+        that.close_wallets_password()
+        that.onShow()
         wx.navigateTo({
           url: '/pages/zhifuchenggong/zhifuchenggong',
         })
       }
       else{
+        that.close_wallets_password()
+        that.onShow()
         wx.navigateTo({
           url: '/pages/zhifushibai/zhifushibai',
         })
